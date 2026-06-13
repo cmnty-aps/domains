@@ -1,0 +1,6 @@
+{
+  "name": "Platform Domain Gratis",
+  "description": "Platform pendaftaran subdomain gratis di bawah domain cmnty.qzz.io dan cmty.dpdns.org dengan manajemen record DNS lengkap.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
