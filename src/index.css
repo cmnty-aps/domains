@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  .neo-box {
+    @apply border-[3px] border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rounded-xl overflow-hidden;
+  }
+  .neo-btn {
+    @apply border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-bold rounded-lg transition-all active:shadow-none active:translate-x-[4px] active:translate-y-[4px];
+  }
+  .neo-btn-primary {
+    @apply bg-yellow-400 text-black hover:bg-yellow-500;
+  }
+  .neo-btn-secondary {
+    @apply bg-white text-black hover:bg-gray-100;
+  }
+  .neo-btn-danger {
+    @apply bg-red-400 text-black hover:bg-red-500;
+  }
+  .neo-btn-success {
+    @apply bg-emerald-400 text-black hover:bg-emerald-500;
+  }
+  .neo-input {
+    @apply border-[3px] border-black rounded-lg focus:outline-none focus:ring-0 focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all;
+  }
+  .neo-badge {
+    @apply border-2 border-black font-bold uppercase;
+  }
+}
+
+body {
+  background-color: #fef08a; /* yellow-200 for stark layout */
+  background-image: radial-gradient(#000 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: #000;
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e5e5e5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4d4d4;
+}
+
